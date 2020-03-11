@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+}
+
 .menu-container {
     color: black;
     background-color: tomato;
@@ -23,26 +28,65 @@
 .links {
     display: flex;
     justify-content: flex-end;
-}
+} 
 
 .login {
     margin-left: 20px;
+} 
+
+.aHeader {
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: rgb(238, 13, 13);
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
-.header-container {
-    color: blue;
-    background-color: white;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
+.aHeader:hover {
+  background: rgba(238, 13, 13, 0.75);
 }
 
-.header {
-    width: 900px;
-    display: flex;
-    justify-content: space-between;
+.main {
+  min-height:100%;
+
+  margin: 0 auto;
+  padding: 0 3em 1.5em;
 }
 
+.navigation ul {
+  border: 1px solid rgb(212, 20, 20);
+  list-style: none;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation li {
+  flex: 3;    
+}
+
+
+@media all and (max-width: 1000px) {
+  .navigation ul {
+     flex-wrap: wrap;
+  }
+  
+  .navigation li {
+     flex: 1 1 50%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .navigation li {
+     flex-basis: 100%;
+  }
+
+}
 .icons,
 .subscribe {
   align-self: flex-end;
@@ -53,6 +97,7 @@
   display: flex;
   justify-content: center;
 }
+
 .photos {
   display: flex;
   background-color: white;
