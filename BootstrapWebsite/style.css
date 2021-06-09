@@ -10,7 +10,15 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: gray;
+    background-color: #F5D0C5;
     color: white;
     text-align: center;
 }
+
+.hobbies > img{
+    width: auto;
+    height: 400px;
+    max-width: 275px;
+    margin-bottom: 20px;
+}
+

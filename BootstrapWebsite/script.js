@@ -53,3 +53,5 @@
 $('.carousel-inner').carousel-inner({
     interval: 2000
   })
+
+  
